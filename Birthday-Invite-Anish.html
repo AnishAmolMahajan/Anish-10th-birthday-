@@ -4,6 +4,34 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Anish's 10th Birthday</title>
+
+<!-- ═══════════════════════════════════════════════════════
+     SOCIAL SHARING META TAGS
+     Replace YOUR-URL with your actual hosted URL
+     ═══════════════════════════════════════════════════════ -->
+
+<!-- Basic SEO -->
+<meta name="description" content="Anish is turning 10! Join us for a neon bowling party on Sunday, 3 May 2026 at Dubai Bowling Center 🎳">
+<meta name="theme-color" content="#bf00ff">
+
+<!-- Open Graph (WhatsApp, Facebook, LinkedIn, iMessage) -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://anishamolmahajan.github.io/Anish-10th-birthday-/Birthday-Invite-Anish.html">
+<meta property="og:title" content="🎳 Anish's 10th Birthday Party">
+<meta property="og:description" content="You're invited! Sunday, 3 May 2026 at Dubai Bowling Center. Tap to RSVP.">
+<meta property="og:image" content="https://anishamolmahajan.github.io/Anish-10th-birthday-/anish-birthday-preview.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Anish's 10th Birthday bowling party invite">
+<meta property="og:site_name" content="Anish's Birthday">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="🎳 Anish's 10th Birthday Party">
+<meta name="twitter:description" content="You're invited! Sunday, 3 May 2026 at Dubai Bowling Center.">
+<meta name="twitter:image" content="https://anishamolmahajan.github.io/Anish-10th-birthday-/anish-birthday-preview.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Boogaloo&family=Lilita+One&family=Nunito:wght@400;700;900&display=block">
@@ -382,10 +410,31 @@ body::after {
 
 #ball {
   position: absolute;
-  font-size: 72px;
+  width: 80px; height: 80px;
   bottom: -90px; left: 50%;
   transform: translateX(-50%);
-  filter: drop-shadow(0 0 24px var(--purple)) drop-shadow(0 0 48px var(--cyan));
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 30% 30%, #8a1fd4 0%, #4a0080 50%, #1a0033 100%);
+  border: 3px solid var(--cyan);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow:
+    0 0 24px var(--cyan),
+    0 0 40px var(--purple),
+    inset 0 -8px 20px rgba(0,0,0,0.5),
+    inset 4px 4px 12px rgba(255,255,255,0.15);
+}
+.ball-ten {
+  font-family: 'Lilita One', cursive;
+  font-size: 28px;
+  color: white;
+  text-shadow:
+    0 0 8px var(--cyan),
+    0 0 16px var(--cyan),
+    0 0 24px var(--pink);
+  letter-spacing: -1px;
 }
 #ball.roll {
   animation: ballRoll 1.5s cubic-bezier(.35,0,.15,1) forwards;
@@ -817,7 +866,7 @@ body::after {
     <div class="pin-row"><span class="ipin" id="p4">🎳</span><span class="ipin" id="p5">🎳</span></div>
     <div class="pin-row"><span class="ipin" id="p6">🎳</span></div>
   </div>
-  <div id="ball">🎱</div>
+  <div id="ball"><span class="ball-ten">10</span></div>
   <div id="strike-text">STRIKE! 🎉</div>
   <div id="flash"></div>
 </div>
